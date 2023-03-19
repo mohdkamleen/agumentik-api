@@ -10,6 +10,8 @@ const TeamSchema = new mongoose.Schema({
         twitter:String,
         instagram:String
     }, 
+},{
+    timestamps:true
 })
 
 module.exports = mongoose.model('Team', TeamSchema);

@@ -5,7 +5,13 @@ const TestemonialSchema = new mongoose.Schema({
     image: String,
     address: String,
     desc: String,
-    rate: { type: Number, default: 0 }
+    rate: { type: Number, default: 0 },
+    disbled :{
+        type:Boolean,
+        default:false
+    }
+},{
+    timestamps:true
 })
 
 module.exports = mongoose.model('Testemonial', TestemonialSchema);

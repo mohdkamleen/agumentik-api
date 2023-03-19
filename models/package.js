@@ -6,7 +6,16 @@ const PackageSchema = new mongoose.Schema({
     rate: [],
     desc: String,
     price: Number,
-    offer: Boolean
+    offer :{
+        type:Boolean,
+        default:false
+    },
+    disbled :{
+        type:Boolean,
+        default:false
+    }
+},{
+    timestamps:true
 })
 
 module.exports = mongoose.model('Package', PackageSchema);
