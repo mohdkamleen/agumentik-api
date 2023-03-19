@@ -1,5 +1,5 @@
 const Team = require("../models/team");
-
+ 
 // these are methode use for crud operation 
 module.exports.add = async (req, res, next) => {
   try {
